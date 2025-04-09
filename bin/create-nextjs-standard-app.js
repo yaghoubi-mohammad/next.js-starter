@@ -9,7 +9,7 @@ const projectName = process.argv[2];
 
 if (!projectName) {
   console.error("❌  لطفاً یک نام برای پروژه وارد کن. مثل:");
-  console.error("    npx create-octavia-app my-project");
+  console.error("    npx create-nextjs-standard-app my-project");
   process.exit(1);
 }
 

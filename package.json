@@ -1,0 +1,22 @@
+{
+  "name": "create-nextjs-standard-app",
+  "version": "1.3.0",
+  "bin": {
+    "create-nextjs-app": "./bin/create-nextjs.js"
+  },
+  "description": "Starter project generator for Octavia Next.js standard apps",
+  "author": "Your Name",
+  "keywords": [
+    "octavia",
+    "nextjs",
+    "starter",
+    "generator",
+    "yaghoubi",
+    "alexyaghoubi.dev",
+    "alexyaghoubi",
+    "nimajanbaz",
+    "create-nextjs-app",
+    "cli"
+  ],
+  "license": "MIT"
+}

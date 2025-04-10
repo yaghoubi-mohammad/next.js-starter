@@ -1,12 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { useTheme } from "next-themes";
 
 export default function ThemeToggle() {
-  const [dark, setDark] = useState(false);
+  const { theme, setTheme } = useTheme();
+
   return (
-    <button onClick={() => setDark(!dark)}>
-      سوییچ تم ({dark ? "تاریک" : "روشن"})
+    <button
+      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+      className="p-2 border rounded"
+    >
+      {theme === "light" ? "🌞" : "🌙"}
     </button>
   );
 }

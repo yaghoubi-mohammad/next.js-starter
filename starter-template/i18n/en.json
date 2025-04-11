@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "title": "Octavia | Cloud Based Software Solutions",
+    "description": "Empowering businesses with innovative software and blockchain solutions to accelerate growth and unlock new opportunities for a brighter future."
+  },
+  "Navbar": {
+    "logoAlt": "Octavia Logo",
+    "logoTitle": "Octavia",
+    "links": {
+      "about": "About",
+      "projects": "Projects",
+      "services": "Services",
+      "contact": "Contact"
+    }
+  },
+  "Footer": {
+    "copyright": "© {year} Octavia - All Rights Reserved",
+    "logoAlt": "Octavia Logo",
+    "logoTitle": "Octavia"
+  }
+}

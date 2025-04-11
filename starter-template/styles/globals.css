@@ -2,22 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-/* فونت پیش‌فرض */
-body {
-  @apply font-sans text-base text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900;
+
+@font-face {
+  font-family: "YekanBakhBold-Ubitex";
+  src: url("../assets/fonts/inter-var-4-latin.woff2");
 }
 
-/* لینک‌ها */
-a {
-  @apply text-blue-600 dark:text-blue-400 underline;
+@font-face {
+  font-family: "YekanBakhExtraBlack-Ubitex";
+  src: url("../assets/fonts/YekanBakhExtraBlack.woff2");
 }
 
-/* عناوین */
-h1, h2, h3 {
-  @apply font-bold text-gray-800 dark:text-gray-200;
+@font-face {
+  font-family: "YekanBakhMedium-Ubitex";
+  src: url("../assets/fonts/inter-var-4-latin.woff2");
 }
 
-/* فرم‌ها */
-input, select, textarea {
-  @apply border border-gray-300 rounded-md p-2 dark:bg-gray-800 dark:border-gray-600 dark:text-white;
+@font-face {
+  font-family: "Octavia-EN";
+  src: url("../assets/fonts/inter-var-4-latin.woff2");
+}
+
+@font-face {
+  font-family: "Octavia-FA";
+  src: url("../assets/fonts/YekanBakhMedium.woff2");
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-octa-dark-200;
+}
+
+::-webkit-scrollbar-thumb {
+  /* background: #0c3e6d; */
+  transition: 0.15s;
+  @apply bg-octa-dark-50 transition-all;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply !bg-octa-base-100 dark:!bg-octa-base-100;
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+.box {
+  @apply border border-octa-light-200/50 dark:border-octa-dark-100 rounded-2xl p-3 lg:p-4 3xl:p-8 bg-octa-light-50 dark:bg-octa-dark-300;
+}
+
+.box2 {
+  @apply border-2 hover:border-dashed border-octa-light-200 dark:border-octa-dark-100 rounded-2xl p-4 lg:p-6 xl:p-8 hover:border-octa-base-100 dark:hover:border-octa-base-100 hover:text-octa-base-100 dark:hover:text-octa-base-100 hover:bg-octa-base-100/10 dark:hover:bg-octa-base-100/10 transition-all;
+}
+
+.box3 {
+  @apply border-2 border-dashed border-octa-light-200 dark:border-octa-dark-100 rounded-2xl p-4 lg:p-6 hover:border-octa-base-100 dark:hover:border-octa-base-100 hover:text-octa-base-100 dark:hover:text-octa-base-100 hover:bg-octa-base-100/10 dark:hover:bg-octa-base-100/10 transition-all;
 }

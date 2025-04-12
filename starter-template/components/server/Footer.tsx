@@ -88,6 +88,15 @@ const Footer = () => {
           >
             NimaJanbaz
           </Link>
+          /
+          <Link
+            href="https://alexyaghoubi.dev?utm_source=octavia"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-octa-base-100 dark:hover:text-octa-dark-50 transition-colors ml-1"
+          >
+            AlexYaghoubi
+          </Link>
         </div>
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-octa-dark-100 dark:via-octa-light-100 to-transparent" />
       </div>

@@ -1,18 +1,18 @@
 // app/components/ScrollToTop.tsx (server component)
 const ScrollToTop = () => {
-    return (
-      <>
-        <button
-          id="scrollToTopBtn"
-          className="hidden fixed bottom-8 right-8 bg-octa-base-100 bg-opacity-10 hover:bg-opacity-20 transition-all text-octa-base-100 cursor-pointer rounded-full w-12 h-12 flex justify-center items-center z-50"
-          aria-label="Scroll to top"
-        >
-          <span className="text-xl">↑</span>
-        </button>
-  
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+  return (
+    <>
+      <button
+        id="scrollToTopBtn"
+        className="hidden fixed bottom-8 right-8 bg-octa-base-100 bg-opacity-10 hover:bg-opacity-20 transition-all text-octa-base-100 cursor-pointer rounded-full w-12 h-12 flex justify-center items-center z-50"
+        aria-label="Scroll to top"
+      >
+        <span className="text-xl">↑</span>
+      </button>
+
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
               (function(){
                 const btn = document.getElementById("scrollToTopBtn");
                 if (!btn) return;
@@ -29,11 +29,10 @@ const ScrollToTop = () => {
                 });
               })();
             `,
-          }}
-        />
-      </>
-    );
-  };
-  
-  export default ScrollToTop;
-  
+        }}
+      />
+    </>
+  );
+};
+
+export default ScrollToTop;

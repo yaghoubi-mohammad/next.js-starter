@@ -1,13 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { ThemeProvider } from "@/hooks/useTheme";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
 import NextTopLoader from "nextjs-toploader";
-import Navbar from "@/components/server/Navbar";
-import Footer from "@/components/server/Footer";
-import ScrollToTop from "@/components/server/ScrollToTop";
-import { ThemeProvider } from "@/hooks/useTheme";
 import { Toaster } from "sonner";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -34,13 +31,9 @@ export default async function RootLayout({
       <body className="bg-octa-dark-300 font-display text-octa-base-100">
         <NextTopLoader color="#fff" shadow="0" height={2} />
 
-        <ScrollToTop />
-
         <NextIntlClientProvider>
           <ThemeProvider>
-            <Navbar />
             {children}
-            <Footer />
             <Toaster position="bottom-left" />
           </ThemeProvider>
         </NextIntlClientProvider>

@@ -4,8 +4,8 @@
   "bin": {
     "create-nextjs-app": "./bin/create-nextjs-standard-app.js"
   },
-  "description": "Starter project generator for Octavia Next.js standard apps",
-  "author": "Your Name",
+  "description": "A CLI tool to generate starter projects for Octavia Next.js standard apps",
+  "author": "Alex Yaghoubi <alexyaghoubi.dev>",
   "keywords": [
     "octavia",
     "nextjs",
@@ -13,10 +13,34 @@
     "generator",
     "yaghoubi",
     "alexyaghoubi.dev",
-    "alexyaghoubi",
-    "nimajanbaz",
+    "Alex Yaghoubi",
+    "Nima Janbaz",
+    "nimajanbaz.dev",
     "create-nextjs-app",
     "cli"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://github.com/yaghoubi-mohammad/next.js-starter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaghoubi-mohammad/next.js-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yaghoubi-mohammad/next.js-starter/issues"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1",
+    "yargs": "^17.7.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "bin",
+    "starter-template"
+  ]
 }

@@ -9,11 +9,11 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "w-full text-sm px-3 py-2 dark:bg-octa-base-1 bg-octa-base-1 hover:bg-octa-base-1/70 dark:hover:bg-octa-base-1/70 text-bold rounded-full transition-all text-white dark:text-white",
+          "w-full text-sm px-3 py-2 dark:bg-octa-base-100 bg-octa-base-100 hover:bg-octa-base-100/70 dark:hover:bg-octa-base-100/70 text-bold rounded-full transition-all text-white dark:text-white",
         destructive:
-          "w-full text-sm px-3 py-2 dark:bg-octa-base-1/10 bg-octa-base-1/10 text-bold rounded-full transition-all dark:text-white",
+          "w-full text-sm px-3 py-2 dark:bg-octa-base-100/10 bg-octa-base-100/10 text-bold rounded-full transition-all dark:text-white",
         outline:
-          "w-full text-sm px-3 py-2 dark:bg-octa-base-1/10 bg-octa-base-1/10 dark:hover:bg-octa-base-1/20 hover:bg-octa-base-1/20 text-bold rounded-full transition-all text-octa-base-1 dark:text-octa-base-1 border border-octa-base-1",
+          "w-full text-sm px-3 py-2 dark:bg-octa-base-100/10 bg-octa-base-100/10 dark:hover:bg-octa-base-100/20 hover:bg-octa-base-100/20 text-bold rounded-full transition-all text-octa-base-1 dark:text-octa-base-1 border border-octa-base-1",
         secondary:
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
